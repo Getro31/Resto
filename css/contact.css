@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(../image/pexels-rajesh-tp-2098131.jpg);
+    background-size: cover;
+}
+.contact{
+    position: absolute;
+    padding: 100px 15px;
+    margin-left: 20%;
+    margin-top: 8%;
+}
+.contenair{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 50px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 50px -10px gray;   
+}
+.title {
+    text-align: center;
+}
+.title h5{
+    font-size: 1em;
+}
+.title h3{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+.contenair form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.contenair form input{
+    width: 45%;
+    margin: 10px 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(238, 229, 95);
+    transition: 0.2s;
+}
+.contenair form input:hover,
+.contenair form textarea:hover{
+    border-bottom: 2px solid rgb(217, 244, 120);
+}
+.contenair form input,
+.contenair form textarea{
+    margin: 15px 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(238, 229, 95);
+    transition: 0.2s;
+}
+.contenair form textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 60px;
+}
+.contenair form button{
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(238, 229, 95);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 30px;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+.contenair form button:hover{
+    transform: translateY(-50);
+    box-shadow: 0px 10px 50px -10px gray;  
+}
+.navbar{
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+}
+.navbar a{
+    color: white;
+}
+.navbar .logo{
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navbar .nav_link ul{
+    display: flex;
+
+}
+.navbar .nav_link ul li{
+    margin: 0 25px;   
+}
+.navbar .nav_link ul li.active a{
+    color: red;
+    font-weight: 600;  
+}
+@media screen and (max-width: 600px) {
+    .contact .contenair form{
+        flex-direction: column;
+        width: 95%;
+    }
+    .contact .contenair form input{
+        width: 100%;
+    }
+    
+}
